@@ -15,6 +15,14 @@ body {
     transform: perspective(2500px);
     transition: 4s;
   }
+
+  .birthdayCard.flipped .cardFront {
+    transform: rotateY(-160deg);
+  }
+  
+  .birthdayCard.flipped .cardInside {
+    z-index: 1;
+  }
   
   .birthdayCard:hover {
       transform: perspective(2500px) rotate(5deg);
